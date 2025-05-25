@@ -93,9 +93,8 @@ const Metrics = () => {
     useTransform(scrollYProgress, [0, 0.2], [0, 1]),
     springConfig
   );
-
   return (
-    <section className="py-20 bg-black/30">
+    <section id="metrics" className="py-20 bg-black/30">
       <motion.div className="max-w-7xl mx-auto px-4" style={{ y, opacity }}>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {metrics.map((metric, index) => (

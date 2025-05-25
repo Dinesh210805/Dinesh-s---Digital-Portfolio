@@ -187,10 +187,9 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
 const Gallery = () => {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
-
   return (
     <motion.section
-      id="projects"
+      id="gallery"
       className="py-24 bg-gradient-to-b from-black/30 via-purple-900/5 to-black/30"
       style={{ y }}
     >

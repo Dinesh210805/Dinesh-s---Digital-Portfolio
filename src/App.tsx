@@ -11,7 +11,6 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Gallery from "./components/Gallery";
-import Projects from "./components/Projects"; // fixed import
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 
@@ -105,16 +104,16 @@ function App() {
   return (
     <div className="bg-[#0a0a0a] text-white min-h-screen font-sans">
       <CustomCursor />
-      <Navbar />
+      <Navbar />{" "}
       <main>
         <HeroSection />
         <AboutSection />
         <Achievements />
+        <Skills />
+        <Gallery />
         <Metrics />
         <Experience />
         <Education />
-        <Skills />
-        <Gallery />
         <Certifications />
         <Contact />
       </main>

@@ -17,24 +17,23 @@ import {
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const navItems = [
-    { label: "Home", href: "#home", icon: <Home size={20} /> }, // Change href from "#" to "#home"
+  const [isMenuOpen, setIsMenuOpen] = useState(false);  const navItems = [
+    { label: "Home", href: "#home", icon: <Home size={20} /> },
     { label: "About Me", href: "#about", icon: <User size={20} /> },
     {
       label: "Achievements",
       href: "#achievements",
       icon: <Trophy size={20} />,
     },
+    { label: "Skills", href: "#skills", icon: <Brain size={20} /> },
+    { label: "Featured Projects", href: "#gallery", icon: <Image size={20} /> },
+    { label: "Metrics", href: "#metrics", icon: <Code size={20} /> },
     { label: "Experience", href: "#experience", icon: <Briefcase size={20} /> },
     {
       label: "Education",
       href: "#education",
       icon: <GraduationCap size={20} />,
     },
-    { label: "Skills", href: "#skills", icon: <Brain size={20} /> },
-    { label: "Projects", href: "#projects", icon: <Code size={20} /> },
     {
       label: "Certifications",
       href: "#certifications",
