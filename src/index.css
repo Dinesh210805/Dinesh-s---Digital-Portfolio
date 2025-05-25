@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* Hide default cursor */
+  * {
+    cursor: none !important;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* Add these styles for proper z-index handling */
+  section {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 100px; /* Add space for navbar */
+  }
+
+  section:last-child {
+    margin-bottom: 120px; /* Extra space at the bottom of the page */
+  }
+
+  .custom-cursor {
+    z-index: 9998 !important;
+  }
+
+  /* Ensure proper stacking for hero section */
+  #home {
+    z-index: 0;
+  }
+
+  /* Navbar specific styles */
+  nav {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    pointer-events: auto !important;
+  }
+
+  nav a,
+  nav button,
+  nav a *,
+  nav button * {
+    cursor: pointer !important;
+  }
+
+  /* Ensure navbar tooltips are visible */
+  .group:hover span {
+    z-index: 10000;
+  }
+
+  /* Enhanced scrollbar for navbar dropdown */
+  .mobile-menu::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  .mobile-menu::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+    border-radius: 3px;
+  }
+  /* Side navbar animations */
+  @keyframes slide-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+  @keyframes installing {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(-90deg) translate(27px) rotate(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    99% {
+      transform: rotate(270deg) translate(27px) rotate(270deg);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes installed {
+    100% {
+      width: 150px;
+      border-color: rgb(35, 174, 35);
+    }
+  }
+
+  @keyframes circleDelete {
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes showInstalledMessage {
+    100% {
+      opacity: 1;
+      visibility: visible;
+      right: 56px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    main {
+      margin-left: 0;
+    }
+  }
+
+  /* Hide scrollbar when mobile menu is open */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* Adjust main content for side navbar */
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .overflow-x-auto {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    .grid {
+      gap: 1rem;
+    }
+
+    /* Improve touch targets */
+    button,
+    a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    /* Better mobile scrolling */
+    .smooth-scroll {
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+    }
+
+    /* Prevent horizontal overflow */
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Improved animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  /* Smoother transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
