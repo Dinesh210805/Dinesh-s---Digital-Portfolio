@@ -3,24 +3,17 @@ import { motion } from "framer-motion";
 const Achievements = () => {
   const achievements = [
     {
-      title: "Aventus Hackathon Winner",
+      title: "Finalist — Aventus 2.0 Hackathon",
       description:
-        "Led a talented team to victory in the Aventus Hackathon, delivering an innovative solution that stood out among fierce competition.",
+        "Developed The Light, an AI-driven application for the blind, which was recognized for its innovation at Dayananda Sagar College of Engineering, Bengaluru.",
       imageUrl: "/images/aventus1.jpg",
       date: "2023",
     },
     {
-      title: "0x Day - First prize",
+      title: "Finalist — 0xday Hack$day Hackathon",
       description:
-        "Secured first place in the 0xDay coding competition by developing a cutting-edge AI solution that impressed judges with its technical sophistication.",
+        "Recognized for Gravitycargo, an Al-driven logistics solution for smarter,greener packing strategies at Sri Manakula Vinayakar Engineering College, Puducherry.",
       imageUrl: "/images/0xday1.JPG",
-      date: "2022",
-    },
-    {
-      title: "1M1B Hackathon Finalist",
-      description:
-        "Advanced to the finals of the prestigious 1M1B Hackathon, showcasing a project that addressed significant real-world challenges using AI.",
-      imageUrl: "/images/1m1b.png",
       date: "2022",
     },
   ];

@@ -11,16 +11,7 @@ import {
 const skills = {
   "Programming Languages": {
     icon: <Code2 className="w-6 h-6" />,
-    skills: [
-      "Python",
-      "JavaScript",
-      "Java",
-      "C",
-      "SQL",
-      "HTML/CSS",
-      "PHP",
-      "TypeScript",
-    ],
+    skills: ["Python", "JavaScript", "Java", "C", "SQL", "HTML/CSS", "PHP"],
   },
   "Machine Learning & AI": {
     icon: <Brain className="w-6 h-6" />,
@@ -35,26 +26,11 @@ const skills = {
   },
   "Frameworks & Libraries": {
     icon: <Layout className="w-6 h-6" />,
-    skills: [
-      "React.js",
-      "Flask",
-      "Flutter",
-      "Bootstrap",
-      "Node.js",
-      "Express.js",
-      "Next.js",
-    ],
+    skills: ["Flask", "Flutter", "Bootstrap", "Node.js"],
   },
   "Development Tools": {
     icon: <Wrench className="w-6 h-6" />,
-    skills: [
-      "Git & GitHub",
-      "VS Code",
-      "Android Studio",
-      "Jupyter Notebook",
-      "Docker",
-      "AWS",
-    ],
+    skills: ["Git & GitHub", "VS Code", "Android Studio", "Jupyter Notebook"],
   },
   "Soft Skills": {
     icon: <MessagesSquare className="w-6 h-6" />,
@@ -65,17 +41,6 @@ const skills = {
       "Project Management",
       "Time Management",
       "Adaptability",
-    ],
-  },
-  Methodologies: {
-    icon: <Workflow className="w-6 h-6" />,
-    skills: [
-      "Agile Development",
-      "SCRUM",
-      "CI/CD",
-      "Test-Driven Development",
-      "RESTful APIs",
-      "Microservices",
     ],
   },
 };
