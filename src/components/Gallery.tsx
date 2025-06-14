@@ -68,17 +68,6 @@ const projects = [
       "https://github.com/Dinesh210805/AUTOMATED-DOCUMENT-MANAGEMENT-SYSTEM-uip-y15",
     live: "https://github.com/Dinesh210805/AUTOMATED-DOCUMENT-MANAGEMENT-SYSTEM-uip-y15",
   },
-  {
-    title: "Accessible E-Commerce",
-    description:
-      "Fully accessible e-commerce platform with voice navigation and screen reader optimization",
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-    category: "Web Development",
-    technologies: ["React", "Next.js", "Accessibility", "Stripe"],
-    github: "https://github.com/username/project4",
-    live: "https://project4.demo",
-  },
 ];
 
 const ProjectCard = ({ project, index }: { project: any; index: number }) => {
