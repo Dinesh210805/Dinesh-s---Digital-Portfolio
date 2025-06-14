@@ -54,11 +54,18 @@
   section {
     position: relative;
     z-index: 1;
-    padding-bottom: 100px; /* Add space for navbar */
+    padding-bottom: 40px; /* Reduced spacing */
+    margin-bottom: 20px; /* Add margin between sections */
   }
 
   section:last-child {
     margin-bottom: 120px; /* Extra space at the bottom of the page */
+  }
+
+  /* Specific spacing for achievements section */
+  #achievements {
+    margin-top: 60px; /* Add top margin to prevent overlap */
+    padding-top: 80px; /* Ensure proper spacing from previous section */
   }
 
   .custom-cursor {
